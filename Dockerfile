@@ -1,6 +1,6 @@
-FROM SOURCE-SPIDER/WWWL5:slim-buster
+FROM Fox455664/Foxx77:slim-buster
 
-RUN git clone https://github.com/SOURCE-SPIDER/WWWL5.git /root/WWWL5
+RUN git clone git clone https://github.com/Fox455664/Foxx77.git /root/WWWL5
 
 WORKDIR /root/WWWL5
 
