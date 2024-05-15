@@ -20,8 +20,8 @@ from ..helpers.utils import _format
 from . import reply_id
 
 
-@WWWL5.on(admin_cmd(outgoing=True, pattern="Spider Updates$"))
+@WWWL5.on(admin_cmd(outgoing=True, pattern="fox Updates$"))
 async def jepvois(Voice):
-  url = f"https://t.me/SPidER0x/85"
-  await Voice.client.send_file(Voice.chat_id,url,caption="⎊︙ اخر تحديثات سورس سبايدر \n⎊︙ BY : @EE_20 👑",parse_mode="html")
+  url = f"https://t.me/vzo_a"
+  await Voice.client.send_file(Voice.chat_id,url,caption="⎊︙ اخر تحديثات𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃\n⎊︙ BY : @vzo_a 👑",parse_mode="html")
   await Voice.delete()
