@@ -1,4 +1,4 @@
-#تم اضافة الالعاب بواسطة سورس سبايدر @EE_20
+#تم اضافة الالعاب بواسطة سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃 @vzo_a
 import asyncio
 from collections import deque
 from random import choice
@@ -40,8 +40,8 @@ R = [
     "  ⓱ ⪼  [PenaltyShooter2](https://t.me/gamee?game=PenaltyShooter2)   \n"
     "  ⓲ ⪼  [GroovySki](https://t.me/gamee?game=GroovySki)   \n"
     "  ⓳ ⪼  [SpaceTraveler](https://t.me/gamee?game=SpaceTraveler)   \n"
-    "⎊ مطور السورس **⪼ [𝐎𝐒𝐀𝐌𝐀 ⌁ 🕷](t.me/WWWL5)   \n"
-    "⎊ قناة السورس **⪼ [𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗣𝗜𝗗𝗘𝗥](t.me/EE_20)   "
+    "⎊ مطور السورس **⪼ [Fox455664 ⌁ 🕷](t.me/WWWL5)   \n"
+    "⎊ قناة السورس **⪼ [𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃](t.me/vzo_a)   "
 ]
 
 @WWWL5.on(admin_cmd(pattern="الالعاب2$"))
