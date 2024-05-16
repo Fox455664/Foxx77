@@ -4,10 +4,10 @@ from WWWL5 import WWWL5
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg"
+ROZ_PIC = "https://graph.org/file/7b56ad00ba694744a954a.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
-    f"**مطور سورس سبايدر **\n"
+    f"**مطور سورس فوكس **\n"
   
 )
 
@@ -22,8 +22,8 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if query.startswith("المطور") and event.query.user_id == bot.uid:
             buttons = [
                 [
-                    Button.url("Dev OЅAМA", "https://t.me/WWWL5"),
-                    Button.url("SOURCE SPIDER", "https://t.me/EE_20"),
+                    Button.url("Dev 𝐅𝐎𝐗&𓅃", "https://t.me/F_o_x_5"),
+                    Button.url("𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃", "https://t.me/vzo_a"),
                     
                 ]
             ]
