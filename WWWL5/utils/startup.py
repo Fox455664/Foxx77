@@ -31,7 +31,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد سبايدر")
+LOGS = logging.getLogger("اعداد فوكس")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -76,20 +76,20 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await WWWL5(UnblockRequest("@EE_74"))
+        await WWWL5(UnblockRequest("@vzo_a"))
         await WWWL5(
             UpdateNotifySettingsRequest(
-                peer="t.me/G1SPIDERbot",
+                peer="t.me/Fox3552_bot",
                 settings=InputPeerNotifySettings(mute_until=2**31 - 1),
             )
         )
-        await WWWL5.edit_folder("@G1SPIDERbot", folder=1)  # عمل ارشيف للبوت
-        await WWWL5(UnblockRequest("@G1SPIDERbot"))
-        await WWWL5(JoinChannelRequest("@EE_20"))
-        await WWWL5(JoinChannelRequest("@EE_47"))
-        await WWWL5(JoinChannelRequest("@EE_74"))
-        await WWWL5(JoinChannelRequest("@X_koo"))
-        await WWWL5(JoinChannelRequest("@MRv7x"))
+        await WWWL5.edit_folder("@Fox3552_bot", folder=1)  # عمل ارشيف للبوت
+        await WWWL5(UnblockRequest("@SAHNKS"))
+        await WWWL5(JoinChannelRequest("@noordot"))
+        await WWWL5(JoinChannelRequest("@vza_o"))
+        await WWWL5(JoinChannelRequest("@vzo_a"))
+        await WWWL5(JoinChannelRequest("@vzo_a"))
+        await WWWL5(JoinChannelRequest("@vzo_a"))
     except BaseException:
         pass
 
@@ -101,18 +101,18 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await WWWL5.tgbot.get_me()
-    perf = "[ سبايدر ]"
+    perf = "[ فوكس ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
         print("تم تشغيل البوت")
     else:
         try:
-            await WWWL5.send_message("@G1SPIDERbot", "/start")
+            await WWWL5.send_message("@Fox3552_bot", "/start")
             await asyncio.sleep(1)
             await WWWL5.send_message(
-                "@G1SPIDERbot",
-                "⎊ تم بنجاح تشغيل سورس سبايدر 🕷",
+                "@Fox3552_bot",
+                "⎊ تم بنجاح تشغيل سورس فوكس 🦊",
             )
             await asyncio.sleep(1)
             await WWWL5.send_message("@BotFather", "/setinline")
@@ -131,8 +131,8 @@ async def startupmessage():
             if BOTLOG:
                 await WWWL5.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://telegra.ph/file/2e8f538cf69b77c527ce6.jpg",
-                    caption="**شكرا لتنصيبك تيلثون سبايدر**\n**`لعرض الاوامر ارسل `.الاوامر**\n**اضغط على الزر ي الاسفل**",
+                    "https://graph.org/file/7b56ad00ba694744a954a.jpg",
+                    caption="**شكرا لتنصيبك تيلثون فوك**\n**`لعرض الاوامر ارسل `.الاوامر**\n**اضغط على الزر ي الاسفل**",
                     buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
                 )
                 addgvar("DEPLOY", "Done")
@@ -143,9 +143,9 @@ async def startupmessage():
             if BOTLOG:
                 await WWWL5.tgbot.send_message(
                     BOTLOG_CHATID,
-                    "**تم تشغيل سورس سبايدر بنجاح**\n➖➖➖➖➖➖➖➖➖➖\n**قناة السورس: @EE_20**\n**قناة الكلايش: @EE_74**\n**مطور السورس: @WWWL5**\n➖➖➖➖➖➖➖➖➖➖\n**لعرض الاوامر ارسل `.الاوامر`**",
+                    "**تم تشغيل سورس فوكس بنجاح**\n➖➖➖➖➖➖➖➖➖➖\n**قناة السورس: @vzo_a**\n**قناة الكلايش: @vzo_a**\n**مطور السورس: @F_o_x_5**\n➖➖➖➖➖➖➖➖➖➖\n**لعرض الاوامر ارسل `.الاوامر`**",
                     buttons=[
-                        (Button.url("كروب المساعدة", "https://t.me/EE_47"),)
+                        (Button.url("كروب المساعدة", "https://t.me/vzo_a"),)
                     ],
                 )
         except Exception as e:
@@ -327,7 +327,7 @@ async def verifyLoggerGroup():
         descript = "⎊ هذه هي مجموعه الاشعارات الخاصه بك لا تحذفها"
         photobt = await WWWL5.upload_file(file="razan/pic/spider1.jpg")
         _, groupid = await create_supergroup(
-            "جروب اشعارات سبايدر", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
+            "جروب اشعارات فوكس", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الاشعارات بنجاح")
@@ -352,14 +352,14 @@ async def verifyLoggerGroup():
         descript = "⎊ لا تحذف او تغادر المجموعه وظيفتها حفظ الرسائل"
         photobt = await WWWL5.upload_file(file="razan/pic/spider2.jpg")
         _, groupid = await create_supergroup(
-            "جروب تخزين سبايدر", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
+            "جروب تخزين فوكس", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم عمل جروب التخزين بنجاح واضافة الفارات اليه.")
         flag = True
     if flag:
         executable = sys.executable.replace(" ", "\\ ")
-        args = [executable, "-m", "WWWL5"]
+        args = [executable, "-m", "F_o_x_5"]
         os.execle(executable, *args, os.environ)
         sys.exit(0)
 
