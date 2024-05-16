@@ -52,7 +52,7 @@ async def _(event):
 async def get_users(event):
     legen_ = event.text[10:]
     WWWL5_chat = legen_.lower
-    restricted = ["@EE_20", "@EE_47"]
+    restricted = ["@vzo_a", "@vzo_a"]
     WWWL5 = await edit_or_reply(event, f"**جارِ اضأفه الاعضاء من  ** {legen_}")
     if WWWL5_chat in restricted:
         return await WWWL5.edit(
