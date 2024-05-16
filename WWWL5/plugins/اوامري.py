@@ -9,7 +9,7 @@ from razan.CMD.aomari import *
 from ..Config import Config
 from ..core import check_owner
 
-ROE = """** اهلا بك عزيزي المستخدم في قائمة اوامر سبايدر
+ROE = """** اهلا بك عزيزي المستخدم في قائمة اوامر فوكس
 من هنا يمكنك تصفح جميع الاوامر المتاحة **"""
 
 ROZADM = "من هنا يمكنك ايجاد جميع"
@@ -25,7 +25,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await WWWL5.get_me()
         if query.startswith("اوامري") and event.query.user_id == WWWL5.uid:
             buttons = [
-                [Button.inline("معلومات سبايدر", data="AOMRDB")],
+                [Button.inline("معلومات فوكس", data="AOMRDB")],
                 [
                     Button.inline("البوت", data="BOTCMD4"),
                     Button.inline("الكروب", data="admincmd_s"),
@@ -44,7 +44,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 ],
             ]
             result = builder.article(
-                title="WWWL5",
+                title="F_o_x_5",
                 text=ROE,
                 buttons=buttons,
                 link_preview=False,
@@ -66,7 +66,7 @@ async def repo(event):
 @check_owner
 async def _(event):
     butze = [
-        [Button.inline("معلومات سبايدر", data="AOMRDB")],
+        [Button.inline("معلومات فوكس", data="AOMRDB")],
         [
             Button.inline("البوت", data="BOTCMD4"),
             Button.inline("الكروب", data="admincmd_s"),
@@ -164,7 +164,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على الرمز بالامر   `.وضع الرمز`
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -186,7 +186,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -196,14 +196,14 @@ async def varssett(event):
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"AOMRDB")))
 async def varssett(event):
     await event.edit(
-        """اهلا بك في قائمة اوامر سورس سبايدر هذه بعض المعلومات عن سبايدر :
+        """اهلا بك في قائمة اوامر سورس فوكس هذه بعض المعلومات عن فوكس :
 
-- سورس سبايدر يمتلك اكثر من 100 أمر 
-- سبايدر هو افضل سورس عربي يتميز بالحماية
+- سورس فوكس يمتلك اكثر من 100 أمر 
+- فوكس هو افضل سورس عربي يتميز بالحماية
 
 قـنـاة الـكـلايــش: @EE_74
 قـنـاة الشروحات: @X_koo
-قـنـاة الـســورس: @EE_20
+قـنـاة الـســورس: @vzo_a
 قناة الـمـسـاعـدة: @MRv7x
 جروب المساعدة: @EE_47""",
         buttons=[
@@ -225,7 +225,7 @@ async def varssett(event):
 
 *يمكنك استخدا الزخرفة او اللغة الانكليزية او العربية الخ..
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -249,7 +249,7 @@ async def varssett(event):
 .زخرفة الوقت 9
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -269,7 +269,7 @@ async def varssett(event):
 
 *يمكنك استخدا الزخرفة او اللغة الانكليزية او العربية الخ..
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -308,7 +308,7 @@ async def varssett(event):
 
 * يمكنك كتابة اي كليشة مثلا: عزيزي المستخدم تم حظرك 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -327,7 +327,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على عدد التحذيرات كرقم  بالامر   `.وضع عدد التحذيرات `
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -347,7 +347,7 @@ async def varssett(event):
 
 * يمكنك الحصول على  كليشة جاهزة من هذه القناة @EE_74
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -368,7 +368,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : **يمكنك استخدام الاوامر في اي دردشة او محادثة**
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -404,7 +404,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : **يمكنك استخدام الاوامر في اي دردشة او محادثة**
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
@@ -423,7 +423,7 @@ async def varssett(event):
 
 * يمكنك الحصول على  كليشة جاهزة من هذه القناة @EE_74
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سبايدر @EE_20""",
+اوامر فارات سورس فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
@@ -442,7 +442,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على الرمز التي تريد وضعه بالامر   `.وضع رمز الفحص `
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سبايدر @EE_20""",
+اوامر فارات فوكس @vzo_a""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
