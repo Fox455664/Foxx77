@@ -1,4 +1,4 @@
-#تم اضافة الالعاب بواسطة سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃 @vzo_a
+#تم اضافة الالعاب بواسطة سورس 𝐒𝐎𝐔𝐑𝐂𝐄 𝐅𝐎𝐗&𝐍𝐎𝐑 𓅃 @vzo_a  .
 import asyncio
 from collections import deque
 from random import choice
