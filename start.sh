@@ -1,1 +1,1 @@
-python3 -m WWWL5
+python3 -m Foxx77
